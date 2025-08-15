@@ -1,0 +1,78 @@
+index.html
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Min blogg</title>
+  <meta name="description" content="En enkel, rask og mobilvennlig bloggmal i én fil." />
+  <style>
+    :root { --max: 760px; }
+    body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.6; color: #111; }
+    header { position: sticky; top: 0; background: #fff8; backdrop-filter: blur(8px); border-bottom: 1px solid #eee; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 1rem; }
+    nav a { margin-right: .75rem; font-size: .95rem; color: #111; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    h1, h2, h3 { line-height: 1.25; }
+    .lead { color: #444; }
+    .grid { display: grid; gap: 1rem; }
+    .muted { color: #666; font-size: .9rem; }
+    .card { border: 1px solid #eee; border-radius: 12px; padding: 1rem; background: #fff; }
+    img { max-width: 100%; border-radius: 10px; }
+    .tag { display: inline-block; border: 1px solid #ddd; border-radius: 999px; padding: .1rem .6rem; font-size: .8rem; margin-right: .4rem; color: #333; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex; align-items:center; justify-content:space-between;">
+      <a class="brand" href="#">Min blogg</a>
+      <nav>
+        <a href="#innlegg">Innlegg</a>
+        <a href="#om">Om</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h1>Hei! Velkommen til bloggen min 👋</h1>
+      <p class="lead">Jeg er helt ny – målet mitt er å skrive korte, nyttige innlegg om ting jeg lærer underveis.</p>
+    </section>
+
+    <section id="innlegg" style="margin-top:2rem;">
+      <h2>Siste innlegg</h2>
+      <div class="grid">
+        <article>
+          <h3>Hvordan jeg startet bloggen</h3>
+          <p class="muted">15. august 2025 · <span class="tag">Nybegynner</span></p>
+          <p>To enkle måter å starte: WordPress eller GitHub Pages.</p>
+        </article>
+        <article>
+          <h3>Mine mål for bloggen</h3>
+          <p class="muted">15. august 2025 · <span class="tag">Personlig</span></p>
+          <p>Jeg vil skrive ett kort innlegg per uke, og holde språket enkelt.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="om" class="card" style="margin-top:2rem;">
+      <h2>Om meg</h2>
+      <p>Jeg heter Lisa og lærer regnskap, Excel og prosjektledelse. Denne bloggen er et sted å lagre notater jeg selv vil finne tilbake til.</p>
+    </section>
+
+    <section id="kontakt" class="card" style="margin-top:1rem;">
+      <h2>Kontakt</h2>
+      <p>Send e‑post til: <a href="mailto:lisa@example.com">lisa@example.com</a></p>
+    </section>
+  </main>
+
+  <footer style="border-top: 1px solid #eee;">
+    <div class="wrap" style="display:flex; justify-content:space-between; padding:1rem 0;">
+      <span>© 2025 Lisa</span>
+      <a href="#">Til toppen</a>
+    </div>
+  </footer>
+</body>
+</html>
+First commit
